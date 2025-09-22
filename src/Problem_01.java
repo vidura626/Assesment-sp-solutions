@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.Objects;
 
 public class Problem_01 {
     public int sumOfTheNumbersForGivenListUsingForLoop(List<Integer> numbers) {
@@ -22,19 +23,13 @@ public class Problem_01 {
 
 
 
-//    public int sumOfTheNumbersForGivenListUsingRecursion(List<Integer> numbers) {
-//        int sum = 0;
-//
-//        return sum;
-//    }
-//
-//    public Integer sumNum(Integer sum, Integer number) {
-//        if (number == null) {
-//            return null;
-//        }
-//        if(``)
-//
-//    }
-
+    public int sumOfTheNumbersForGivenListUsingRecursion(List<Integer> numbers, Integer sum) {
+        if(numbers.isEmpty()){
+            return sum;
+        }
+        sum += numbers.get(0);
+        numbers.remove(0);
+        return sumOfTheNumbersForGivenListUsingRecursion(numbers, sum);
+    }
 }
 

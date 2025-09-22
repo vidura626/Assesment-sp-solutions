@@ -19,6 +19,8 @@ public class Main {
         int sumOfTheNumbersForGivenListUsingWhileLoop = problem1.sumOfTheNumbersForGivenListUsingWhileLoop(list);
         System.out.println("Sum of the numbers using while loop : " + sumOfTheNumbersForGivenListUsingWhileLoop);
 
+        int sumOfTheNumbersUsingRecursion = problem1.sumOfTheNumbersForGivenListUsingRecursion(list, 0);
+        System.out.println("Sum of the numbers using recursion : " + sumOfTheNumbersUsingRecursion);
 
 
         //==================Problem 02===================
