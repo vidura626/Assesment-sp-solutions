@@ -22,14 +22,19 @@ public class Problem_01 {
 
 
 
-    public int sumOfTheNumbersForGivenListUsingRecursion(List<Integer> numbers) {
-        int sum = 0;
-        int index = 0;
-        while (index < numbers.size()){
-            sum += numbers.get(index);
-            index++;
-        }
-        return sum;
-    }
+//    public int sumOfTheNumbersForGivenListUsingRecursion(List<Integer> numbers) {
+//        int sum = 0;
+//
+//        return sum;
+//    }
+//
+//    public Integer sumNum(Integer sum, Integer number) {
+//        if (number == null) {
+//            return null;
+//        }
+//        if(``)
+//
+//    }
+
 }
 
