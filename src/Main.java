@@ -13,7 +13,6 @@ public class Main {
         list.add(4);
         list.add(5);
 
-
         System.out.println("====================Problem 1==========================");
         int sumOfTheNumbersForGivenListUsingForLoop = problem1.sumOfTheNumbersForGivenListUsingForLoop(list);
         System.out.println("Sum of the number using for loop : " + sumOfTheNumbersForGivenListUsingForLoop);
@@ -67,7 +66,16 @@ public class Main {
         System.out.println("Formed Largest Number for array : " + formedLargestNumbersOfTheArray);
 
         //==================Problem 05===================
+        Problem_05 problem5 = new Problem_05();
+        int target = 100 - (1 + 2 + 9); // 88
+        int[] nums = {1,2,3, 4, 5, 6, 7, 8, 9};
 
+        List<List<Integer>> results = new ArrayList<>();
+        problem5.findCombinations(nums, target, 0, new ArrayList<>(), results);
 
+        for (List<Integer> combination : results) {
+            System.out.println("1 + 2 + " + combination + " + 9 = 100");
+        }
+        System.out.println("Total solutions: " + results.size());
     }
 }
