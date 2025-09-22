@@ -13,6 +13,8 @@ public class Main {
         list.add(4);
         list.add(5);
 
+
+        System.out.println("====================Problem 1==========================");
         int sumOfTheNumbersForGivenListUsingForLoop = problem1.sumOfTheNumbersForGivenListUsingForLoop(list);
         System.out.println("Sum of the number using for loop : " + sumOfTheNumbersForGivenListUsingForLoop);
 
@@ -37,7 +39,7 @@ public class Main {
         listInteger.add(3);
         listInteger.add(4);
         listInteger.add(5);
-
+        System.out.println("====================Problem 2==========================");
         Problem_02 problem2 = new Problem_02();
         List<Object> combinedList = problem2.combineTwoLists(listString, listInteger);
         System.out.println("Combined Two Lists ");
@@ -45,6 +47,8 @@ public class Main {
 
 
         //==================Problem 03===================
+        System.out.println("====================Problem 3==========================");
+
         Problem_03 problem3 = new Problem_03();
         List<Integer> integers = problem3.calculateFirst100FibbonacciNumbers();
         System.out.println("First 100 Fibonacci Numbers : " + integers);
@@ -56,6 +60,8 @@ public class Main {
         listToFIndFormedLargestNumber.add(9);
 
         //==================Problem 04===================
+        System.out.println("====================Problem 4==========================");
+
         Problem_04 problem4 = new Problem_04();
         Integer formedLargestNumbersOfTheArray = problem4.findFormedLargestNumbersOfTheArray(listToFIndFormedLargestNumber);
         System.out.println("Formed Largest Number for array : " + formedLargestNumbersOfTheArray);
